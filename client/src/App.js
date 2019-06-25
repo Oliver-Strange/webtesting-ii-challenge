@@ -65,8 +65,13 @@ class App extends React.Component {
     return (
       <div className="App">
         <h2>Baseball</h2>
-        <Display />
-        <Dashboard />
+        <Display balls={this.state.balls} strikes={this.state.strikes} />
+        <Dashboard
+          balls={this.balls}
+          strikes={this.strikes}
+          fouls={this.fouls}
+          hit={this.hit}
+        />
       </div>
     );
   }
