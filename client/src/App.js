@@ -17,7 +17,8 @@ Count Rules
 class App extends React.Component {
   state = {
     balls: 0,
-    strikes: 0
+    strikes: 0,
+    fouls: 0
   };
 
   balls = () => {
@@ -65,7 +66,11 @@ class App extends React.Component {
     return (
       <div className="App">
         <h2>Baseball</h2>
-        <Display balls={this.state.balls} strikes={this.state.strikes} />
+        <Display
+          balls={this.state.balls}
+          strikes={this.state.strikes}
+          fouls={this.state.fouls}
+        />
         <Dashboard
           balls={this.balls}
           strikes={this.strikes}

@@ -8,4 +8,9 @@ describe("<Dashboard />", () => {
   it("renders without crashing", () => {
     render(<Dashboard />);
   });
+
+  it("displays dashboard", () => {
+    const { getByText } = render(<Dashboard />);
+    getByText(/dashboard/i);
+  });
 });

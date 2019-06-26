@@ -6,15 +6,10 @@ Dashboard
 */
 import React from "react";
 
-function Display(props) {
-  console.log(props);
-  return (
-    <div>
-      <h2>Display</h2>
-      <h4>balls: {props.balls}</h4>
-      <h4>strikes: {props.strikes}</h4>
-    </div>
-  );
+class Dashboard extends React.Component {
+  render() {
+    return <h2>Dashboard</h2>;
+  }
 }
 
-export default Display;
+export default Dashboard;
