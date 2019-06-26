@@ -12,7 +12,6 @@ function Display(props) {
       <h2>Display</h2>
       <h4>balls: {props.balls}</h4>
       <h4>strikes: {props.strikes}</h4>
-      <h4>fouls: {props.fouls}</h4>
     </div>
   );
 }

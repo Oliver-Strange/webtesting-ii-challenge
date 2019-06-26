@@ -22,10 +22,11 @@ class App extends React.Component {
   };
 
   balls = () => {
-    if (this.state.balls === 4) {
+    if (this.state.balls + 1 === 4) {
       this.setState({
         balls: 0,
-        strikes: 0
+        strikes: 0,
+        fouls: 0
       });
     } else {
       this.setState({
@@ -35,10 +36,11 @@ class App extends React.Component {
   };
 
   strikes = () => {
-    if (this.state.strikes === 3) {
+    if (this.state.strikes + 1 === 3) {
       this.setState({
         balls: 0,
-        strikes: 0
+        strikes: 0,
+        fouls: 0
       });
     } else {
       this.setState({
@@ -58,7 +60,8 @@ class App extends React.Component {
   hit = () => {
     this.setState({
       balls: 0,
-      strikes: 0
+      strikes: 0,
+      fouls: 0
     });
   };
 
